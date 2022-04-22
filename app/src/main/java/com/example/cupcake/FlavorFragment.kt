@@ -51,7 +51,10 @@ class FlavorFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+//        apply is a scope function that forms a temporary scope, you can access the object without its name
         binding?.apply {
+//            Binding the view model instance with the shared view model instance in the layout
+            viewModel = sharedViewModel
             nextButton.setOnClickListener { goToNextScreen() }
         }
     }
