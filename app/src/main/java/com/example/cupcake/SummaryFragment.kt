@@ -60,7 +60,6 @@ class SummaryFragment : Fragment() {
             summaryFragment = this@SummaryFragment
         }
     }
-
     /**
      * Submit the order by sharing out the order details to another app via an implicit intent.
      */
